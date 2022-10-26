@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk.Worker">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>dotnet-mt_memory_leak-bea64614-09c5-4ba1-9042-1ea719ac79e3</UserSecretsId>
+    <RootNamespace>mt_memory_leak</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="6.0.1" />
+    <PackageReference Include="MassTransit.RabbitMQ" Version="8.0.7" />
+  </ItemGroup>
+</Project>
