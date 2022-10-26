@@ -22,7 +22,6 @@ public class Worker : BackgroundService
         {
             try
             {
-                // _logger.LogInformation("Worker running at: {time}", DateTimeOffset.Now);
 
                 await _bus.Publish(
                     new TestMessage()
@@ -34,7 +33,6 @@ public class Worker : BackgroundService
                     },
                     stoppingToken
                 );
-                // await Task.Delay(100, stoppingToken);
             }
             catch (Exception ex)
             {
